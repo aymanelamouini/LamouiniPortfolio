@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-pitch-black text-crimson antialiased overflow-x-hidden selection:bg-crimson/30 selection:text-crimson;
+  }
+  
+  /* Absolute Text Color Override - Force ALL typography to be crimson */
+  h1, h2, h3, h4, h5, h6, p, span, a, li, div, button, input, textarea, label {
+    color: #e8dcdf !important;
+  }
+}
+
+.bg-grid {
+  background-size: 50px 50px;
+}
